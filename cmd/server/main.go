@@ -24,6 +24,7 @@ func main() {
 	api := e.Group("/api")
 
 	routes.AuthRoutes(api)
+	routes.TenantRoute(api)
 
 	// WAJIB: jalankan server
 	utils.LogRoutes(e)
