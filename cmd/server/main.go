@@ -26,6 +26,7 @@ func main() {
 	routes.AuthRoutes(api)
 	routes.TenantRoute(api)
 	routes.CoreRoute(*api)
+	routes.CustomerRouter(*api)
 
 	// WAJIB: jalankan server
 	utils.LogRoutes(e)
