@@ -30,12 +30,6 @@ func NewAuthController(authService *services.AuthService) *AuthController {
 	return &AuthController{authService: authService}
 }
 
-/*
-|--------------------------------------------------------------------------
-| Handlers
-|--------------------------------------------------------------------------
-*/
-
 // POST /register
 func (h *AuthController) Register(c echo.Context) error {
 	var req RegisterRequest
